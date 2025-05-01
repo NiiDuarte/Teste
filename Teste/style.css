@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    color: #ffffff;
+}
+
+body {
+    background-color: #0f0f1e;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+    margin:30px 0 0 30px;
+}
+nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.topo {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    padding: 0;
+    margin-right: 80px;
+    text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+
+}
+
+.topo li a {
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.topo li {
+    position: relative; 
+    letter-spacing: 3px;
+}
+
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:#00f7ff;
+    transition: width 0.2s ease;
+} 
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+main h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 45px;
+    color: #00f7ff;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px
+}
+
+.p1 {
+    font-size: 25px;
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+    margin-bottom: 0;
+
+}
+.p1 img {
+    width: 900px;
+    height: 600px;
+}
+
+.btn {
+    all: unset; 
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    padding: 10px;
+    background-color: #0f0f1e;
+    text-align: center;
+    margin: 25px;
+    width: 500px;
+
+}
+
+.btn:hover {
+    background-color: #00f7ff;
+    color: black;
+}
+
+.botao {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 30, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.botaogg {
+    background: white;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.botaogg h2 {
+    color: black;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+    color: #0f0f1e;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #0f0f1e;
+}
+
+form button {
+    padding: 10px;
+    background-color: #0f0f1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  transition: background-color 1s ease,
+}
+
+form button:hover {
+    background-color: #00f7ff;
+    color: black;
+}
+
