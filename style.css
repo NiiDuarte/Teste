@@ -67,35 +67,30 @@ header nav ul li:hover::after {
     width: 100%;
 }
 
-.logotipo {
-    margin: 0;
-    width: 50px;
-}
-
 main h1{
     font-weight: 800;
     font-size: 45px;
     color: #00f7ff;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px
 }
 
 .p1 {
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     margin: 50px;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
     text-align: justify;
+    margin-bottom: 0;
 
 }
 .p1 img {
     width: 900px;
-    height: 400px;
+    height: 600px;
 }
-
-
 
 button {
     all: unset; 
@@ -104,13 +99,13 @@ button {
     border: solid 2px #ffffff;
     padding: 10px;
     background-color: #0f0f1e;
-    margin: 15px;
+    margin-left: 250px;
+    margin-top: 0;
     text-align: center;
+
 }
 
-.escondido {
-    display: none;
-}
+
 
 form {
     display: flex;
