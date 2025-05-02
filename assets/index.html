@@ -14,7 +14,7 @@
         <nav>
             <ul class="topo">
                 <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Sobre</a></li>  <!--Necessita redirecionar os links para algum lugar-->
                 <li><a href="#">Dúvidas</a></li>
             </ul>
         </nav>
@@ -34,14 +34,14 @@
                     voluptas illum itaque asperiores molestias nesciunt reiciendis alias neque suscipit quos vero eius?
                     Accusantium.
                 </p>
-                <img src="img/nikita-pishchugin-ur-Tzy2gJX0-unsplash.jpg" alt="Imagem meramente ilustrativa">
+                <img src="img/nikita-pishchugin-ur-Tzy2gJX0-unsplash.jpg" alt="Imagem meramente ilustrativa"> <!--imagem do serviço-->
             </div>
-                <input type="button" onclick="btn()" value="Acessar Serviço" class="btn">
+                <input type="button" onclick="btn()" value="Acessar Serviço" class="btn"> <!--botao para acessar forms-->
                 <div id="botao" class="botao">
                     <div class="botaogg">
                         <span class="close" onclick="fecharPopup()">&times;</span>
                         <h2>Entre em Contato</h2>
-                        <form id="formulario">
+                        <form id="formulario" onsubmit="envia(event)">
                             <label for="nome">Nome:</label>
                             <input type="text" id="nome" name="nome" required>
 
@@ -56,6 +56,6 @@
     </main>
     <footer></footer>
     <script src="index.js"></script>
-</body>
 
+</body>
 </html>
