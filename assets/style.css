@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #0f0f1e;
+    background-color: #0f0f1f;
     width: 100%;
     height: 100vh;
     font-size: 16px;
@@ -20,16 +20,18 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top:0;
+    background-color: #141429;
     align-items: flex-end;
-    padding: 10px 20px;
     width: 100%;
-    margin-bottom: 100px;
+    z-index: 1000; 
 }
 
 header h1 {
     font-family: "Orbitron", sans-serif;
     font-size: 40px;
-    margin:30px 0 0 30px;
+    margin:20px;
 }
 nav {
     display: flex;
@@ -42,6 +44,7 @@ nav {
     font-size: 25px;
     padding: 0;
     margin-right: 80px;
+    margin-bottom:20px;
     text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
 
 }
@@ -87,8 +90,8 @@ main h1{
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
     overflow: hidden;
+    margin: 200px auto;
 }
 
 .carousel img {
@@ -243,3 +246,9 @@ form button:hover {
     color: black;
 }
 
+footer{
+    background-color:rgba(0, 0, 0, 0.377);
+    text-align: center;
+    padding:30px;
+    margin-top:50px;
+}
